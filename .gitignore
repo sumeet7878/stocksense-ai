@@ -1,0 +1,41 @@
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# ── Environment / secrets (never commit these) ────────────────
+.env
+.env.*
+*.key
+*.pem
+*.secret
+secrets.*
+credentials.*
+*.token
+
+# ── Node / frontend ───────────────────────────────────────────
+frontend/node_modules/
+frontend/dist/          # Vercel builds this — no need to commit
+
+# ── OS / editor ───────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+*.log
+
+# ── NOTE: frontend/src/data/results.json IS committed ─────────
+# It is the pre-computed forecast payload bundled at Vite build
+# time. Without it the static deploy has no data.
