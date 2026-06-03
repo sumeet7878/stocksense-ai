@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-🚀 **[View Dashboard →](https://stocksense-ai.vercel.app)** &nbsp;|&nbsp; 📁 **[GitHub Repo →](https://github.com/sumeet7878/stocksense-ai)**
+🚀 **[View Dashboard →](https://myproject-fawn-rho.vercel.app)** &nbsp;|&nbsp; 📁 **[GitHub Repo →](https://github.com/sumeet7878/stocksense-ai)**
 
 ---
 
