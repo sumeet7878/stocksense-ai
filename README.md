@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-🚀 **[View Dashboard →](https://myproject-fawn-rho.vercel.app)** &nbsp;|&nbsp; 📁 **[GitHub Repo →](https://github.com/sumeet7878/stocksense-ai)**
+🚀 **[View Dashboard →](https://stocksense-ai-sumeet7878s-projects.vercel.app/)** &nbsp;|&nbsp; 📁 **[GitHub Repo →](https://github.com/sumeet7878/stocksense-ai)**
 
 ---
 
@@ -149,7 +149,7 @@ Model trained on days 1–60 of history; evaluated on days 61–90 (30-day pseud
 ## Project Structure
 
 ```
-myproject/
+stocksense-ai/
 ├── generate_forecast.py       # trains model, writes results.json
 ├── requirements.txt           # Prophet + statsmodels + pandas
 ├── vercel.json                # Vercel build config + CDN cache headers
