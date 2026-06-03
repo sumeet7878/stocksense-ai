@@ -1,4 +1,4 @@
-# Sales & Inventory Demand Forecasting Dashboard
+# StockSense AI — Retail Demand Forecasting Dashboard
 
 **AI-powered retail stock intelligence — predicts demand 30 days ahead, flags overstock and stockout risk, and quantifies the ₹ impact. Deployed as a zero-backend static app.**
 
@@ -14,15 +14,13 @@
 
 ## Live Demo
 
-🚀 **[View Dashboard →](https://your-app.vercel.app)** &nbsp;|&nbsp; 📁 **[GitHub Repo →](https://github.com/yourusername/sales-forecast-dashboard)**
-
-> _(Replace URLs after deploying to Vercel and pushing to GitHub)_
+🚀 **[View Dashboard →](https://stocksense-ai.vercel.app)** &nbsp;|&nbsp; 📁 **[GitHub Repo →](https://github.com/sumeet7878/stocksense-ai)**
 
 ---
 
 ## Screenshot
 
-![Dashboard](./screenshot.png)
+![Dashboard](Screenshot.png)
 
 ---
 
@@ -53,7 +51,7 @@ Retail businesses hemorrhage money from two opposite directions: **overstock loc
 | Layer | Technology |
 |---|---|
 | **Forecasting** | Python 3.11, Prophet (primary) → ARIMA(1,1,1) → Holt-Winters (auto-fallback), pandas, statsmodels |
-| **Frontend** | React 18, Vite 5, Tailwind CSS 3, Recharts 2 |
+| **Frontend** | React 18, Vite 5, Tailwind CSS 3, Recharts 3 |
 | **Deployment** | Vercel (static, zero-backend) |
 | **Data** | Pre-computed `results.json` bundled at build time |
 
