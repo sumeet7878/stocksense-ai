@@ -35,6 +35,7 @@ Thumbs.db
 .idea/
 .vscode/
 *.log
+.sixth
 
 # ── NOTE: frontend/src/data/results.json IS committed ─────────
 # It is the pre-computed forecast payload bundled at Vite build

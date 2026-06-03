@@ -7,7 +7,6 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ReferenceLine,
 } from "recharts";
 import { useTheme } from "../ThemeContext";
