@@ -166,7 +166,12 @@ export default function App() {
         <div className={`max-w-7xl mx-auto px-4 sm:px-6 py-5 flex flex-col sm:flex-row items-center
                           justify-between gap-3 text-xs
           ${isDark ? "text-slate-600" : "text-slate-400"}`}>
-          <span>Predictions pre-computed at build time — instant load, zero hosting cost.</span>
+          <div className="flex flex-col sm:flex-row items-center gap-2 text-center sm:text-left">
+            <span>Predictions pre-computed at build time — instant load, zero hosting cost.</span>
+            <span className={`text-[11px] ${isDark ? "text-slate-500" : "text-slate-400"}`}>
+              Currency conversion uses fixed approximate rates for presentation purposes.
+            </span>
+          </div>
           <div className="flex items-center gap-4">
             <span>Model: <strong className={isDark ? "text-slate-400" : "text-slate-600"}>{data.model}</strong></span>
             <span>React · Vite · Tailwind · Recharts</span>
