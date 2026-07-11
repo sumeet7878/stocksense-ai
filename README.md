@@ -20,7 +20,21 @@
 
 ## Screenshot
 
-![Dashboard](Screenshot.png)
+![Dashboard](screenshots\Demand-Forecast.png)
+
+Note: All currency values are converted from INR to USD using an approximate exchange rate of 1 INR = 0.012 USD for presentation purposes.
+
+---
+
+## Power BI Dashboard
+
+In addition to the live web dashboard, this project includes a Power BI version — Demand Forecast — built on the same StockSense AI dataset, to demonstrate BI tool proficiency.
+
+![Demand Forecast - Power BI Dashboard](./screenshots/demand-forecast-powerbi.png)
+
+**[Download the .pbix file](./powerbi/Demand-Forecast.pbix)** — open in Power BI Desktop (free) to explore interactively with filters and slicers.
+
+Note: All currency values are converted from INR to USD using an approximate exchange rate of 1 INR = 0.012 USD for presentation purposes.
 
 ---
 
@@ -48,12 +62,12 @@ Retail businesses hemorrhage money from two opposite directions: **overstock loc
 
 ## Tech Stack
 
-| Layer | Technology |
-|---|---|
+| Layer           | Technology                                                                                        |
+| --------------- | ------------------------------------------------------------------------------------------------- |
 | **Forecasting** | Python 3.11, Prophet (primary) → ARIMA(1,1,1) → Holt-Winters (auto-fallback), pandas, statsmodels |
-| **Frontend** | React 18, Vite 5, Tailwind CSS 3, Recharts 3 |
-| **Deployment** | Vercel (static, zero-backend) |
-| **Data** | Pre-computed `results.json` bundled at build time |
+| **Frontend**    | React 18, Vite 5, Tailwind CSS 3, Recharts 3                                                      |
+| **Deployment**  | Vercel (static, zero-backend)                                                                     |
+| **Data**        | Pre-computed `results.json` bundled at build time                                                 |
 
 ---
 
@@ -98,6 +112,7 @@ Predictions are baked into the JS bundle at deploy time — **zero cold-start la
 ## Setup & Deploy
 
 ### Prerequisites
+
 - Python 3.11+
 - Node.js 18+
 
@@ -137,10 +152,10 @@ vercel          # run from project root; build config is in vercel.json
 
 Model trained on days 1–60 of history; evaluated on days 61–90 (30-day pseudo-holdout). Actual model used: **ARIMA(1,1,1)** (Prophet was not installed in this environment; script auto-selects the best available).
 
-| Metric | Value | Context |
-|---|---|---|
-| **Avg MAE** | **23.6 units / day** | Average absolute miss per SKU per day |
-| **Avg MAPE** | **13.9 %** | Retail industry benchmark is typically 20–40%; 13.9% is competitive for a simple statistical model without exogenous features |
+| Metric       | Value                | Context                                                                                                                       |
+| ------------ | -------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| **Avg MAE**  | **23.6 units / day** | Average absolute miss per SKU per day                                                                                         |
+| **Avg MAPE** | **13.9 %**           | Retail industry benchmark is typically 20–40%; 13.9% is competitive for a simple statistical model without exogenous features |
 
 > **Note:** MAPE will improve with Prophet (captures seasonality more precisely) or by adding external regressors (promotions, holidays). The current numbers are honest baselines from ARIMA on synthetic data — not tuned or cherry-picked.
 
