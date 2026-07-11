@@ -20,7 +20,7 @@
 
 ## Screenshot
 
-![Dashboard](screenshots\Demand-Forecast.png)
+![Dashboard](./screenshots/Demand-Forecast.png)
 
 Note: All currency values are converted from INR to USD using an approximate exchange rate of 1 INR = 0.012 USD for presentation purposes.
 
